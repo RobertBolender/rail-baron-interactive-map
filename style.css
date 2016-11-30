@@ -6,14 +6,14 @@ svg {
   left: 0;
   opacity: 0.75;
 }
-path { fill: transparent; }
+path { fill: transparent; stroke: transparent; }
 .selected { fill: rgba(255,255,255,0.5); stroke: #fff; }
 .red,
 .blue,
 .green,
 .yellow,
 .white,
-.black { stroke-width: 3px; }
+.black { stroke-width: 2px; }
 .red { fill: #f00; }
 .blue { fill: #00f; }
 .green{ fill: #0f0; }
