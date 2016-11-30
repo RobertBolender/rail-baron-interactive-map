@@ -7,6 +7,13 @@ svg {
   opacity: 0.75;
 }
 path { fill: transparent; }
+.selected { fill: rgba(255,255,255,0.5); stroke: #fff; }
+.red,
+.blue,
+.green,
+.yellow,
+.white,
+.black { stroke-width: 3px; }
 .red { fill: #f00; }
 .blue { fill: #00f; }
 .green{ fill: #0f0; }
