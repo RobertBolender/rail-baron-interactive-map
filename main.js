@@ -48,4 +48,14 @@ $('document').ready(function(){
     }
   });
 
+  // For demonstration purposes
+  var colors = 'red,blue,green,yellow,white,black'.split(',');
+  $('path').each(function(path){
+    var color = colors.shift();
+    colors.push(color);
+    $('#player').val(color);
+    $('#selector').val($(this).attr('id'));
+    $('#button').click();
+  });
+
 });
