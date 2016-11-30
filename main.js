@@ -1,4 +1,5 @@
 $('document').ready(function(){
+
   $('#button').on('click', function(event){
     var rr = $('#selector').val();
     if (!rr){ return; }
@@ -10,4 +11,9 @@ $('document').ready(function(){
       $('#'+rr).removeClass();
     }
   });
+
+  $('path').on('click', function(event){
+    $('#selector').val($(this).attr('id'));
+  });
+
 });

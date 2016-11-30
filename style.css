@@ -6,6 +6,7 @@ svg {
   left: 0;
   opacity: 0.75;
 }
+path { fill: transparent; }
 .red { fill: #f00; }
 .blue { fill: #00f; }
 .green{ fill: #0f0; }
