@@ -7,19 +7,54 @@ svg {
   opacity: 0.75;
 }
 path { fill: transparent; stroke: transparent; }
-.selected { fill: rgba(255,255,255,0.5); stroke: #fff; }
+.selected { fill: rgba(255,255,255,0.5); }
 .red,
 .blue,
 .green,
 .yellow,
 .white,
-.black { stroke-width: 2px; }
+.black { stroke-width: 2px; stroke: #000; }
 .red { fill: #f00; }
 .blue { fill: #00f; }
 .green{ fill: #0f0; }
 .yellow { fill: #ff0; }
 .white { fill: #fff; }
 .black { fill: #000; }
+.selected { stroke: #fff; }
+
+.filter-red .blue,
+.filter-red .green,
+.filter-red .yellow,
+.filter-red .white,
+.filter-red .black,
+.filter-blue .red,
+.filter-blue .green,
+.filter-blue .yellow,
+.filter-blue .white,
+.filter-blue .black,
+.filter-green .red,
+.filter-green .blue,
+.filter-green .yellow,
+.filter-green .white,
+.filter-green .black,
+.filter-yellow .red,
+.filter-yellow .blue,
+.filter-yellow .green,
+.filter-yellow .white,
+.filter-yellow .black,
+.filter-white .red,
+.filter-white .blue,
+.filter-white .green,
+.filter-white .yellow,
+.filter-white .black,
+.filter-black .red,
+.filter-black .blue,
+.filter-black .green,
+.filter-black .yellow,
+.filter-black .white {
+  fill: #999;
+}
+
 h1 {
   text-align: center;
 }

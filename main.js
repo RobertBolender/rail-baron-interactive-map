@@ -31,4 +31,21 @@ $('document').ready(function(){
     $('.selected').removeClass('selected');
   });
 
+  $('#filter').on('click', function(event){
+    var color = $('#player').val();
+    if (!color){ return; }
+    var filter = 'filter-' + color;
+    if ($('body').hasClass(filter)){
+      $('body').removeClass(filter);
+    } else {
+      $('body').removeClass(function(){
+        return this.className.split(' ')
+          .filter(function(className) {
+            return className.match(/filter-[^ ]+/)
+          }).join(' ');
+      });
+      $('body').addClass(filter);
+    }
+  });
+
 });
