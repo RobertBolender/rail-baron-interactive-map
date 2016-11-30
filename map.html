@@ -3,33 +3,8 @@
 <head>
   <title>Rail Baron Interactive Map</title>
   <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-  <style>
-    body { margin: 0; }
-    img, svg { width: 100%; }
-    svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.75;
-    }
-    .red path { fill: #f00; }
-    .blue path { fill: #00f; }
-    .green path { fill: #0f0; }
-    .yellow path { fill: #ff0; }
-    .white path { fill: #fff; }
-    .black path { fill: #000; }
-    h1 {
-      text-align: center;
-    }
-    #controls {
-      text-align: center;
-    }
-    select, button {
-      margin: 5px;
-      min-height: 40px;
-      min-width: 200px;
-    }
-  </style>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <!--<img src="map.jpg" />-->
@@ -554,7 +529,7 @@
              1403.90,694.00 1398.00,660.00 1398.00,660.00
              1398.00,660.00 1345.00,665.28 1345.00,665.28 Z" />
 </svg>
-<h1>Rail Baron Interactive Map</h1>
+
 <div id="controls">
   <select id="selector">
     <option value="" disabled>None</option>
@@ -573,20 +548,6 @@
   </select>
   <button id="button" type="button" class="button">Button</button>
 </div>
-<script>
-  $('document').ready(function(){
-    $('#button').on('click', function(event){
-      var rr = $('#selector').val();
-      if (!rr){ return; }
-      var color = $('#player').val();
-      if (color){
-        $('#'+rr).removeClass();
-        $('#'+rr).addClass(color);
-      } else {
-        $('#'+rr).removeClass();
-      }
-    });
-  });
-</script>
+
 </body>
 </html>

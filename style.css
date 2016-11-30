@@ -1,0 +1,29 @@
+body { margin: 0; }
+img, svg { width: 100%; }
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+}
+.red { fill: #f00; }
+.blue { fill: #00f; }
+.green{ fill: #0f0; }
+.yellow { fill: #ff0; }
+.white { fill: #fff; }
+.black { fill: #000; }
+h1 {
+  text-align: center;
+}
+#controls {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+select, button {
+  margin: 5px;
+  min-height: 20px;
+  min-width: 200px;
+}
+
