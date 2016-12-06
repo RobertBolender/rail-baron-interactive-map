@@ -23,8 +23,13 @@ $('document').ready(function(){
   });
 
   $('path').on('click', function(event){
-    $('#selector').val($(this).attr('id'));
-    selectLine();
+    var rr = $('#selector').val();
+    if (rr === $(this).attr('id') && $(this).hasClass('selected')){
+      $('.selected').removeClass('selected');
+    } else {
+      $('#selector').val($(this).attr('id'));
+      selectLine();
+    }
   });
 
   $('#clear').on('click', function(event){
