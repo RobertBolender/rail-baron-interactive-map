@@ -101,7 +101,8 @@ select, button {
   width: 98%;
 }
 
-.active {
+button.active,
+button:active {
   background: #333;
   color: #fff;
 }
