@@ -51,11 +51,14 @@ $('document').ready(function(){
   // For demonstration purposes
   var colors = 'red,blue,green,yellow,white,black'.split(',');
   var rand = Date.now() % colors.length;
+  var count = 0;
   $('path').each(function(path){
+    if (count >= 20){ return; }
     var color = colors[rand++ % colors.length];
     $('#player').val(color);
     $('#selector').val($(this).attr('id'));
     $('#button').click();
+    count++;
   });
 
 });
