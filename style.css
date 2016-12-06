@@ -101,8 +101,6 @@ select, button {
   width: 98%;
 }
 
-button:hover,
-button:focus,
 button.active,
 button:active {
   background: #333;
