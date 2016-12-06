@@ -22,6 +22,24 @@ path { fill: transparent; stroke: transparent; }
 .black { fill: #000; }
 .selected { stroke: #fff; }
 
+[class^="filter"] svg {
+  background-color: #fff;
+}
+
+[class^="filter"] path:not(.red):not(.blue):not(.green):not(.yellow):not(.white):not(.black){
+  stroke: #f0f;
+  stroke-width: 10px;
+  fill: #f0f;
+  mask: url(#mask-stripe);
+  opacity: 0.75;
+}
+
+.filter-none .red,
+.filter-none .blue,
+.filter-none .green,
+.filter-none .yellow,
+.filter-none .white,
+.filter-none .black,
 .filter-red .blue,
 .filter-red .green,
 .filter-red .yellow,
@@ -53,6 +71,7 @@ path { fill: transparent; stroke: transparent; }
 .filter-black .yellow,
 .filter-black .white {
   fill: #999;
+  opacity: 0;
 }
 
 h1 {

@@ -10,6 +10,17 @@
 <body>
 <img src="images/map-grey.jpg" />
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2624 1338">
+  <defs>
+    <pattern id="pattern-stripe" 
+      width="4" height="4" 
+      patternUnits="userSpaceOnUse"
+      patternTransform="rotate(45)">
+      <rect width="2" height="4" transform="translate(0,0)" fill="white"></rect>
+    </pattern>
+    <mask id="mask-stripe">
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-stripe)" />
+    </mask>
+  </defs>
   <path id="wp"
         fill="none" stroke="black" stroke-width="1"
         d="M 344.00,392.00
@@ -3064,7 +3075,7 @@
     <option value="sp">$42k Southern Pacific</option>
   </select>
   <select id="player">
-    <option value="" disabled>None</option>
+    <option value="none">None</option>
     <option value="red">Red</option>
     <option value="blue">Blue</option>
     <option value="green">Green</option>

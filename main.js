@@ -11,10 +11,10 @@ $('document').ready(function(){
     if (!rr){ return; }
     var color = $('#player').val();
     if (color){
-      $('#'+rr).removeClass('red blue green yellow white black');
+      $('#'+rr).removeClass('red blue green yellow white black none');
       $('#'+rr).addClass(color);
     } else {
-      $('#'+rr).removeClass('red blue green yellow white black');
+      $('#'+rr).removeClass('red blue green yellow white black none');
     }
   });
 
