@@ -85,15 +85,28 @@ path { fill: transparent; stroke: transparent; }
 h1 {
   text-align: center;
 }
+
 #controls {
-  position: absolute;
-  top: 0;
+  font-size: 22px;
   width: 100%;
   text-align: center;
 }
+
 select, button {
+  font-size: inherit;
   margin: 5px;
-  min-height: 20px;
-  min-width: 200px;
+  min-height: 25px;
+  background: #fefefe;
+  border: 1px solid #000;
+  width: 98%;
 }
 
+@media (min-width: 600px){
+  #controls {
+    position: absolute;
+    top: 0;
+  }
+  select, button {
+    width: auto;
+  }
+}
