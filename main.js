@@ -1,5 +1,9 @@
 $('document').ready(function(){
 
+  if (location.hash === '#demo'){
+    $('#random').removeClass('hidden');
+  }
+
   var selectLine = function(){
     var rr = $('#selector').val();
     $('.selected').removeClass('selected');
@@ -51,17 +55,18 @@ $('document').ready(function(){
     }
   });
 
-  // For demonstration purposes
-  var colors = 'red,blue,green,yellow,white,black'.split(',');
-  var rand = Date.now() % colors.length;
-  var count = 0;
-  $('path').each(function(path){
-    if (count >= 20){ return; }
-    var color = colors[rand++ % colors.length];
-    $('#player').val(color);
-    $('#selector').val($(this).attr('id'));
-    $('#button').click();
-    count++;
+  $('#random').on('click', function(event){
+    var colors = 'red,blue,green,yellow,white,black'.split(',');
+    var rand = Date.now() % colors.length;
+    var count = 0;
+    $('path').each(function(path){
+      if (count >= 28){ return; }
+      var color = colors[rand++ % colors.length];
+      $('#player').val(color);
+      $('#selector').val($(this).attr('id'));
+      $('#button').click();
+      count++;
+    });
   });
 
 });
