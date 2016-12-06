@@ -38,6 +38,7 @@ $('document').ready(function(){
     var filter = 'filter-' + color;
     if ($('body').hasClass(filter)){
       $('body').removeClass(filter);
+      $('#filter').removeClass('active');
     } else {
       $('body').removeClass(function(){
         return this.className.split(' ')
@@ -46,6 +47,7 @@ $('document').ready(function(){
           }).join(' ');
       });
       $('body').addClass(filter);
+      $('#filter').addClass('active');
     }
   });
 
