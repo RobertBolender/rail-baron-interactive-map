@@ -7,7 +7,7 @@ svg {
   opacity: 0.75;
 }
 path { fill: transparent; stroke: transparent; }
-.selected { fill: rgba(255,255,255,0.5); }
+.selected { stroke-dasharray: 10; }
 .red,
 .blue,
 .green,
@@ -20,7 +20,11 @@ path { fill: transparent; stroke: transparent; }
 .yellow { fill: #ff0; }
 .white { fill: #fff; }
 .black { fill: #000; }
-.selected { stroke: #fff; }
+.selected { stroke: #000; }
+.selected.black,
+.selected.blue {
+  stroke: #fff;
+}
 
 [class^="filter"] svg {
   background-color: #fff;
