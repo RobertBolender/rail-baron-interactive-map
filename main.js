@@ -32,10 +32,6 @@ $('document').ready(function(){
     }
   });
 
-  $('#clear').on('click', function(event){
-    $('.selected').removeClass('selected');
-  });
-
   $('#filter').on('click', function(event){
     var color = $('#player').val();
     if (!color){ return; }
