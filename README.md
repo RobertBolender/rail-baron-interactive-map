@@ -2,8 +2,12 @@
 
 I made this quick app to help track the progress of games of Rail Baron.
 
-## Screenshot
+The filter toggle allows you to see only lines that belong to you or that are still unowned.
+
+## Screenshots
 ![](images/screenshot-1.png)
+
+![](images/screenshot-2.png)
 
 If this map is helpful to you, I'd be excited to hear about it.
 
