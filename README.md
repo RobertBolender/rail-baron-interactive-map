@@ -2,7 +2,7 @@
 
 I made this quick app to help track the progress of games of Rail Baron.
 
-You can select lines either by clicking on the line directly or by using the dropdown menu.
+You can select lines either by clicking on the line directly or by using the dropdown menu.  
 Choose a color with the second dropdown, and click "Apply Color" to apply the color to the selected line.
 
 The filter toggle allows you to see only lines that belong to the currently selected color  or that are still unowned.
