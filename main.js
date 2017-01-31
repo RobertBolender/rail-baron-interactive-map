@@ -1,3 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ColorPicker from './components/colorpicker.js';
+
+let colors = 'None,Red,Blue,Green,Yellow,White,Black'.split(',');
+
+ReactDOM.render(
+  <ColorPicker colors={colors}/>,
+  document.getElementById('colorPicker')
+);
+
 var $ = require('jquery');
 $('document').ready(function(){
 
