@@ -6,7 +6,8 @@
   "author": "Bob Bolender <bobthethree@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "webpack-dev-server --inline --hot --content-base ./"
   },
   "dependencies": {
     "babel-core": "^6.22.1",
@@ -19,6 +20,7 @@
     "webpack": "beta"
   },
   "devDependencies": {
-    "jest": "^18.1.0"
+    "jest": "^18.1.0",
+    "webpack-dev-server": "^2.2.1"
   }
 }
