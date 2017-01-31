@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-size: 22px;
+}
+img, svg { width: 100%; }
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+}
+path { fill: transparent; stroke: transparent; }
+.selected {
+  stroke-dasharray: 10;
+  fill: #f0f;
+  opacity: 0.5;
+}
+.red,
+.blue,
+.green,
+.yellow,
+.white,
+.black { stroke-width: 2px; stroke: #000; opacity: 1; }
+.red { fill: #f00; }
+.blue { fill: #00f; }
+.green{ fill: #0f0; }
+.yellow { fill: #ff0; }
+.white { fill: #fff; }
+.black { fill: #000; }
+.selected { stroke: #000; }
+.selected.black,
+.selected.blue {
+  stroke: #fff;
+}
+
+[class^="filter"] svg {
+  background-color: #fff;
+}
+
+[class^="filter"] path:not(.red):not(.blue):not(.green):not(.yellow):not(.white):not(.black){
+  stroke: #f0f;
+  stroke-width: 10px;
+  fill: #f0f;
+  mask: url(#mask-stripe);
+  opacity: 0.75;
+}
+
+.filter-none .red,
+.filter-none .blue,
+.filter-none .green,
+.filter-none .yellow,
+.filter-none .white,
+.filter-none .black,
+.filter-red .blue,
+.filter-red .green,
+.filter-red .yellow,
+.filter-red .white,
+.filter-red .black,
+.filter-blue .red,
+.filter-blue .green,
+.filter-blue .yellow,
+.filter-blue .white,
+.filter-blue .black,
+.filter-green .red,
+.filter-green .blue,
+.filter-green .yellow,
+.filter-green .white,
+.filter-green .black,
+.filter-yellow .red,
+.filter-yellow .blue,
+.filter-yellow .green,
+.filter-yellow .white,
+.filter-yellow .black,
+.filter-white .red,
+.filter-white .blue,
+.filter-white .green,
+.filter-white .yellow,
+.filter-white .black,
+.filter-black .red,
+.filter-black .blue,
+.filter-black .green,
+.filter-black .yellow,
+.filter-black .white {
+  fill: #999;
+  opacity: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#controls {
+  width: 100%;
+  text-align: center;
+}
+
+select, button {
+  font-size: inherit;
+  margin: 5px;
+  min-height: 25px;
+  background: #fefefe;
+  border: 3px solid #333;
+  width: 98%;
+}
+
+button.active,
+button:active {
+  background: #333;
+  color: #fff;
+}
+
+@media (min-width: 600px){
+  #controls {
+    position: absolute;
+    top: 0;
+  }
+  select, button {
+    width: auto;
+  }
+}
+
+.hidden {
+  display: none;
+}
